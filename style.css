@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    padding: 10%;
+    overflow: hidden;
+    margin: 5vh;
+    flex-direction: column;
+    background-image: url(one.jpg);
+}
+.scroll{
+    white-space: nowrap;
+    animation: scrolltext 5s linear infinite;
+    color: orange;
+    background-color: gray;
+    font-style: italic;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+}
+.blinking{
+    animation: blinktext 5s alternate infinite;
+    color:black;
+    background-color:yellowgreen;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+@keyframes scrolltext {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+@keyframes blinktext {
+    0% ,100%{opacity: 1;}
+    50% {opacity: 0;}
+    
+}
